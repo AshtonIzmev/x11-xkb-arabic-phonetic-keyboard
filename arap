@@ -1,0 +1,69 @@
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "latin"
+
+    name[Group1]="Phonarabic";
+    key.type[Group1]="FOUR_LEVEL";
+
+    key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [    Arabic_ain,          2,   asciitilde,    oneeighth ]	};  // 3ayn
+    key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
+    key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
+    key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
+    key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
+    key <AE07>	{ [    Arabic_hah,          7,        grave, seveneighths ]	};   // 7a2
+    key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
+    key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
+    key <AE10>	{ [    agrave,          0,           at,       degree ]	};
+    key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
+    key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
+
+    key <AD01>	{ [    Arabic_alef,  Arabic_hamzaonalef,  Arabic_hamzaunderalef,  AE ]	};         // ‎alif, alif_bhamza_lfo9, alif_bhamza_lta7t
+    key <AD02>	{ [    Arabic_zain,  Arabic_zah, guillemotleft,        less ]	};                 // zad, dhad   
+    key <AD03>	{ [    Arabic_hamza,          E,     EuroSign,         cent ]	};                 // hamza
+    key <AD04>	{ [    Arabic_ra,        Arabic_ghain,          ecircumflex,           Ecircumflex ] }; //  ra2, ghain
+    key <AD05>	{ [    Arabic_teh,              Arabic_tah,                thorn,                 THORN ] }; // ta2, Ta2
+    key <AD06>	{ [    Arabic_yeh,             Arabic_alefmaksura,           ydiaeresis,            Ydiaeresis ] }; // ya2, alif m9sora
+    key <AD07>	{ [    Arabic_hamzaonwaw,       Arabic_hamzaonyeh,          ucircumflex,           Ucircumflex ] };                  // hamza fo9 lwaw, o fo9 lya2
+    key <AD08>	{ [    Arabic_yeh,                I,          icircumflex,           Icircumflex ] }; // i I î Î
+    key <AD09>	{ [    Arabic_waw,                O,                   oe,                    OE ] }; // waw
+    key <AD10>	{ [                p,                P,          ocircumflex,           Ocircumflex ] }; // p P ô Ô
+    key <AD11>	{ [    dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering ] };
+    key <AD12>	{ [    dollar,   sterling,     currency,  dead_macron ]	};
+
+    key <AC01>	{ [    Arabic_qaf,          Q,           at,  Greek_OMEGA ]	};                                                // qaf, 
+    key <AC02>	{ [    Arabic_seen,      Arabic_sad,               ssharp,    doublelowquotemark ] };                         // sinn
+    key <AC03>	{ [    Arabic_dal,       Arabic_dad,           Arabic_thal,            Arabic_thal ] };                         // dal, DaD, thal
+    key <AC04>	{ [    Arabic_feh,                F,  leftsinglequotemark,    singlelowquotemark ] };                         // fa2
+    key <AC05>	{ [    Arabic_jeem,     Arabic_ghain, rightsinglequotemark,                   yen ] }; // jim, ghain
+    key <AC06>	{ [    Arabic_ha,       Arabic_hah,                  eth,                   ETH ] };                          // ha2
+    key <AC07>	{ [    Arabic_jeem,     Arabic_jeem,           udiaeresis,            Udiaeresis ] }; // jim
+    key <AC08>	{ [    Arabic_kaf,      Arabic_khah,           idiaeresis,            Idiaeresis ] };                         // kaf, kha2
+    key <AC09>	{ [    Arabic_lam,      Arabic_lam,            0x1000140,             0x100013F ] };                         // lam
+    key <AC10>	{ [    Arabic_meem,     Arabic_meem,           mu,    masculine ]	};                                            // mim
+    key <AC11>	{ [    ugrave,    percent, dead_circumflex, dead_caron]	};
+    key <TLDE>	{ [    twosuperior, asciitilde,     notsign,      notsign ]	};
+
+    key <LSGT>  { [             less,          greater,        lessthanequal,      greaterthanequal ] }; // < > ≤ ≥
+    key <BKSL>	{ [   asterisk,         mu,   dead_grave,   dead_breve ]	};
+    key <AB01>	{ [   Arabic_waw,          W,      lstroke,      Lstroke ]	};                // waw
+    key <AB02>  { [   Arabic_tehmarbuta,      Arabic_theh,       guillemotright,  rightdoublequotemark ] };            //ta marbota
+    key <AB03>  { [   Arabic_kaf,             Arabic_sheen,            copyright,            registered ] }; // caf, shin
+    key <AB04>  { [                v,                V,            0x100202F,             leftarrow ] }; // v V ⍽ ←
+    key <AB05>  { [   Arabic_beh,                B,            downarrow,               uparrow ] };                        // ba2
+    key <AB06>  { [   Arabic_noon,                N,              notsign,            rightarrow ] };                       // noon
+    key <AB07>	{ [     comma,   Arabic_question_mark,   question, dead_doubleacute ] };      // arabic_question_mark  
+    key <AB08>	{ [   semicolon,     period, horizconnector,   multiply ]	};
+    key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
+    key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+
+    // INCL1
+    key <I219>	{ [ less, greater ]	};
+
+    // INCL2
+    key <KPDL>  { [       KP_Delete,      KP_Decimal,           KP_Delete,           KP_Decimal ] };
+    key <SPCE> { [           space, nobreakspace,     underscore,          U202F ] }; // ␣ (espace insécable) _ (espace insécable fin)
+
+    include "level3(ralt_switch)"
+};

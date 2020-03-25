@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry>
+    <layoutList>
+        <layout>
+        <configItem>
+            <name>arap</name>
+
+            <shortDescription>Latin Phonetic Arabic</shortDescription>
+            <description>Tried to map latin phonems to arabic letters</description>
+            <countryList>
+            <iso3166Id>MA</iso3166Id>
+            </countryList>
+            <languageList>
+            <iso639Id>ara</iso639Id>
+            </languageList>
+        </configItem>
+        </layout>
+    </layoutList>
+</xkbConfigRegistry>
